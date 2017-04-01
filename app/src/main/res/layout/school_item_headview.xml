@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="#ededed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!--
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ease_seabar_input"
+        android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#8C8C8C"
+        android:textSize="16sp"
+        android:hint="search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="55dp"
+        android:singleLine="true"/>
+
+        -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        />
+
+        <ImageView
+            android:id="@+id/school_sift"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/sift_down"
+
+            />
+
+
+
+
+    </RelativeLayout>

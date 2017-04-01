@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="广州大学华软软件学院"
+        android:textSize="22dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ccc"></View>
+    <TextView
+        android:id="@+id/school_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="本科 · 广州市"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/school_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:textSize="17sp"
+        android:lineSpacingExtra="4dp"
+        android:text="          广州大学华软软件学院（简称华软学院）成立于2002年，创建之初是由广州大学和社会力量合作举办的民办二级学院，2006年经国家教育部批准确认为实施本科学历教育的全日制普通高等学校独立学院。华软学院由广州大学和广州盈和投资管理有限公司合作举办，是全国独立学院中学科专业特色鲜明的IT类专业院校，是国家发展和改革委员会国际合作中心合作示范学院，是广东省和广州市两级国际服务外包人才培训机构，经广东省民政厅评定为首批5A级社会组织。学院坐落在享有“北回归线上的明珠”美誉的从化经济开发区，即将开通的地铁14号线太平站出口旁，交通便利。华软校园景色秀美、环境怡人，一渠两湖布局雅致，丝木棉花绽放瑰伟，是莘莘学子读书治学的理想之所。
+
+华软学院设有软件工程系、网络技术系、电子系、计算机系、数码媒体系、游戏系、管理系、国际经贸系、财会系、外语系等10个系，开设包括广东省“十一五”特色专业软件工程、网络工程在内的28个本科专业，涵盖工学、艺术学、管理学、经济学、文学等5大学科门类。现有全日制本科在校生12500人。华软学院定位科学、理念先进、治学严谨、管理规范，自创办以来，毕业生就业率一直稳定在94%以上，累计为社会培养了26000多名具有创新创业精神和实践动手能力的复合型、应用型人才。
+
+华软学院秉承“博学笃行、与时俱进”的校训精神，注重与区域经济和社会发展结合，注重与行业企业深度合作，在“大众创业、万众创新”的时代潮流下，在省内同类院校中较早成立了创新创业学院，作为产教融合、校企合作的平台，注重科技创新与学科专业融合，注重人才培养与创新创业实践结合。华软学院以信息产业为依托，以信息技术在各行各业的应用为立足点，重点发展包含软件工程、信息工程、网络工程、信息管理与信息系统、电子信息工程、智能科学与技术、物联网工程、计算机科学与技术、自动化、数字媒体技术、网络与新媒体、电子商务等IT类专业为核心的优势学科群，培养适应国家信息产业发展需要的应用型人才。华软学院的IT教育已经形成品牌效应，“学IT，到华软”得到社会的广泛认同。
+
+华软学院实施“人才强校”战略，面向海内外吸纳优秀人才，拥有一支数量充足、结构合理、专业素质精良的师资队伍。既有来自公办高校的专家教授，也有来自海外的留学归国人员，还有来自企业实践经验丰富的“双师型”教师。为培养一批具有国际思维和全球视野的高端技术人才，华软学院携手国外大学联盟，与美国、澳大利亚等国的近百所知名大学联合举办“本硕连读”留学计划和交流计划。华软学院与国内国际顶尖IT企业合作及课程嵌入，与微软合作校园IT计划，与IBM合作课程嵌入，与软件测试巨头Parasoft合建软测实验室，与苹果公司共建iOS开发实训基地，使学院的教学紧贴技术发展与应用的前沿。
+
+经过十几年的发展建设，华软学院形成了鲜明的办学特色，取得了丰硕的办学成果。“十二五”期间华软学院认真贯彻实施广东省高等教育“创新强校工程”和“民办高校质量工程”，共取得广东省质量工程项目179项、广东高校省级重点平台和重大科研项目12项、广东省实验教学示范中心2个、广东软件与信息技术服务协同育人中心1个、广东省服务外包人才培训基地1个、省级大学生创新创业训练计划项目35个、国家级大学生创新创业训练计划项目5个。学生参加各级各类竞赛获得省级以上奖项达459项，获奖数量与层次均居省内同类院校前列。
+
+目前，全体华软人在上级教育行政部门和学院董事会的正确领导下，在举办高校广州大学的全力支持下，开拓进取，锐意创新，积极改善办学条件，大力加强内涵建设，努力凝练办学特色，全面提高教育质量，致力于把华软学院建成一所在同类院校中具有比较优势和品牌特色的高水平民办大学。（2016年6月更新）"
+        />
+
+</LinearLayout>
+</ScrollView>

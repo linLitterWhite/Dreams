@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_image"
+                android:layout_centerHorizontal="true"
+                android:text="首页"
+                android:textSize="12sp"
+                android:id="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/home_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/home1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forum_image"
+                android:layout_centerHorizontal="true"
+                android:text="论坛"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:id="@+id/forum_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/job2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/message"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_image"
+                android:layout_centerHorizontal="true"
+                android:text="消息"
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/main_bottom"
+        android:background="#ccc"
+        ></View>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#393a3f"
+        android:elevation="1dp"
+        style="@style/Widget.Look.HomeToolbar"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dream1"
+
+            />
+
+        <TextView
+            android:id="@+id/toolbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="发帖"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>

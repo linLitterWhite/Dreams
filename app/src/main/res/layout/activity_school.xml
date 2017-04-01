@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/luntan_FindFragment_title"
+        android:background="#393a3f"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        app:tabIndicatorColor="#ffffffff"
+        app:tabTextColor="#ff000000"
+        app:tabSelectedTextColor="#ffffffff" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/luntan_FindFragment_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:layout_below="@+id/luntan_FindFragment_title"
+        />
+
+    <com.looklook.xinghongfei.looklook.widget.MyStarMenu
+        android:id="@+id/addmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        >
+        <ImageView
+            android:id="@+id/addmenu_addmenu_main"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/add"
+            />
+        <ImageView
+            android:id="@+id/addmenu_addmenu_call"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/invite"
+            />
+        <ImageView
+            android:id="@+id/addmenu_addmenu_message"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/sendmessag"
+            />
+    </com.looklook.xinghongfei.looklook.widget.MyStarMenu>
+
+
+
+</RelativeLayout>

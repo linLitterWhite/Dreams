@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/school_sift_context"
+    android:background="#ff000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="15.0dip"
+
+        >
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff3299cc"
+            android:id="@+id/fenshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="分数：" 
+            />
+        <EditText
+            android:textSize="20.0sp"
+            android:textColor="#000"
+            android:id="@+id/edit_fenshu"
+            android:background="@drawable/school_sift_shap_click"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLength="3"
+            android:hint="分数"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/fenshu"
+            android:gravity="center_vertical"
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="20dp"
+        >
+        <TextView android:textSize="18.0sp"
+            android:textColor="#ff3299cc"
+            android:id="@+id/pici"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="批次："
+            android:layout_centerVertical="true"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:id="@+id/yiben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重点学校"
+                style="@style/school_sift_1_style" />
+            <TextView
+                android:id="@+id/erben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本科"
+                style="@style/school_sift_1_style" />
+            <TextView
+                android:id="@+id/sanben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专批" style="@style/school_sift_1_style" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="18.0dip"
+        >
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff3299cc"
+            android:id="@+id/schoolname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="学校名："
+            />
+        <EditText
+            android:textSize="20.0sp"
+            android:textColor="#000"
+            android:id="@+id/schoolnametext"
+            android:background="@drawable/school_sift_shap_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入学校名字"
+            android:layout_toRightOf="@+id/schoolname"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingBottom="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        >
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff3299cc"
+            android:id="@+id/shengshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="10dp"
+            android:text="所属省市：" />
+        <Button
+            android:id="@+id/sift_school_address"
+            android:background="@drawable/school_sift_shap_click"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="广东省·广州市"
+            android:layout_toRightOf="@+id/shengshi"
+            android:layout_alignTop="@+id/shengshi"
+            />
+        <ListView
+            android:id="@+id/provinceList"
+            android:visibility="gone"
+            android:layout_width="75dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_below="@+id/sift_school_address"
+            android:layout_alignLeft="@+id/sift_school_address" />
+        <ListView
+            android:id="@+id/cityList"
+            android:visibility="gone"
+            android:layout_width="75dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@+id/provinceList"
+            android:layout_below="@+id/sift_school_address" />
+    </RelativeLayout>
+    <Button
+        android:textSize="20.0sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/ok_sift"
+        android:background="@drawable/school_sift_shap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="90.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text="确定" />
+</LinearLayout>

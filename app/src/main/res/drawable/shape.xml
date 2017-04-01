@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="#00ff00ff" />
+
+    <stroke
+        android:width="1dip"
+        android:color="#A0A0A0" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="1dp" />
+
+
+
+    <corners android:radius="5dp" />
+    <!-- //设置边框的颜色   //设置宽度2px -->
+    <stroke android:color="#ccc"
+    android:width="2px"
+    />
+
+</shape>

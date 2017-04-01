@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@+id/title_zhuagnye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="计算机科学与技术" />
+
+        <TextView
+            android:textSize="15.0sp"
+            android:id="@+id/zhuanye_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2.5dp"
+            android:text="计算机专业涵盖软件工程专业，主要培养具有良好的科学素养，系统地、较好地掌握计算机科学与技术包括计算机硬件、软件与应用的基本理论、基本知识和基本技能与方法，能在科研部门、教育单位、企业、事业、技术和行政管理部门等单位从事计算机教学、科学研究和应用的计算机科学与技术学科的高级科学技术人才。"
+            android:layout_below="@+id/title_zhuagnye" />
+
+</RelativeLayout>
+
+

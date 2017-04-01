@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/bus_seg_split_line"
+        android:background="#ffe0e0e0"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginStart="50.0dip" />
+    <RelativeLayout android:id="@+id/bus_route_direction"
+        android:layout_width="wrap_content" android:layout_height="44.0dip"
+        android:layout_marginLeft="11.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="11.0dip" android:layout_alignParentStart="true">
+        <ImageView android:id="@+id/bus_dir_icon"
+            android:layout_width="22.0dip"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dir_start"
+            android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/bus_dir_icon_up"
+            android:background="#ffb6b6b6"
+            android:visibility="gone"
+            android:layout_width="2.0dip"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bus_dir_icon"
+            android:layout_centerHorizontal="true" />
+        <ImageView android:id="@+id/bus_dir_icon_down"
+            android:background="#ffb6b6b6"
+            android:visibility="gone"
+            android:layout_width="2.0dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/bus_dir_icon"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bus_item"
+        android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <RelativeLayout android:id="@+id/stationinfo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/bus_expand_image"
+                android:visibility="gone" android:clickable="true" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:src="@drawable/down" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="6.0dip" android:layout_alignParentEnd="true" />
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="#ff4c90f9"
+                android:gravity="center_vertical"
+                android:id="@+id/bus_station_num"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@+id/bus_expand_image"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/bus_expand_image" />
+        </RelativeLayout>
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="#ff333333"
+            android:id="@+id/bus_line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="70.0dip" android:text="出发" android:layout_centerVertical="true" android:layout_marginStart="50.0dip" android:layout_marginEnd="70.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/expand_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/bus_item" />
+</RelativeLayout>

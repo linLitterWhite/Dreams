@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#393a3f"
+        android:elevation="1dp"
+        style="@style/Widget.Look.HomeToolbar"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dream1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="专业介绍"
+            android:textSize="19sp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="计算机科学与技术"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WEB应用开发"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:lineSpacingExtra="2.5dp"
+        android:text="        WEB应用软件通常是指运行在互联网环境中的应用软件。随着互联网的应用普及，以WEB应用软件开发为特征的企业级应用软件、中间件，已成为当前国际软件产业市场的热门需求和发展趋势，政府、企事业单位需要大量专业人才来构建、管理和维护安全、可靠、高性能、易扩充的Web站点。
+【培养定位】
+本专业培养大学本科层次，德、智、体、美全面发展，具有较好的人文社会科学素养、较强的自主学习能力和创新创业精神，掌握计算机软硬件、网络的基础理论和基本知识、软件开发的主流技术，具备应用软件设计、开发、管理和维护能力，能适应技术进步和社会需求变化的高素质软件开发专门人才。
+【授予学位】
+工学学士
+【专业设置特色】
+计算机系为华软软件学院与母体学校广州大学的计算机学院共建，各专业主要课程的教学由广州大学计算机学院教师担任。广州大学计算机学科的办学历史有20多年，现有一支高职称、高学历既懂教学又会科研的师资队伍，在计算机科学与技术、网络工程、软件工程等专业教育中积累丰富经验；近一二年，计算机系加大了专业教师的引进力度，师资力量不断提高。互联网时代为Web应用软件的发展提供了广阔空间，我们在应用软件开发方面积累丰富经验，课程体系、实验体系比较完备，使用业界流行技术和平台，通过课外辅导、学术讲座、专业竞赛、参观实习、职业资格或水平考证、项目实训、学习互助小组等方式加强学生应用能力和专业技能的培养，拓展视野，提高竞争力。
+具有较强的计算机应用能力
+开设课程有：计算机科学导论、办公软件、离散数学、计算机网络与通信、计算机组成原理、操作系统；
+程序设计与实现能力
+开设的课程有：C语言程序设计、C++面向对象编程、数据结构与算法、数据库原理与应用、Java程序设计、Java程序设计实训、软件测试基础 (选修课：Android应用软件开发、Oracle数据库管理与维护、.Net程序设计、XML技术原理与应用等)；
+Web应用系统的设计、开发、管理、维护能力
+开设的课程有：网页设计与制作、 Java EE开发技术、Java SSH框架及应用开发、软件工程、WEB软件开发实训、毕业实习、毕业设计(选修课：Javascript、PHP应用开发、Java Web 2.0开发技术、ASP.NET应用开发等)。"
+        />
+
+
+</LinearLayout>
+</ScrollView>

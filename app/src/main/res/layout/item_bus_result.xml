@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/border_bg" android:paddingLeft="12.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="#ffe0e0e0"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/info" 
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginRight="30.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff333333"
+            android:ellipsize="end"
+            android:id="@+id/bus_path_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:singleLine="false" />
+        <TextView android:textSize="13.0sp"
+            android:textColor="#ff999999"
+            android:gravity="center"
+            android:id="@+id/bus_path_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip" />
+    </LinearLayout>
+    <TextView android:id="@+id/image"
+        android:background="@drawable/arrow_right_blue"
+        android:layout_width="9.0dip" android:layout_height="14.0dip"
+        android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="14.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

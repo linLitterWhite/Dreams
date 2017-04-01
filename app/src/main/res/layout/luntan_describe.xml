@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="35.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5.0dip">
+        <com.looklook.xinghongfei.looklook.widget.XCRoundImageView
+            android:id="@+id/comment_item_userimage"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:src="@mipmap/huaruan" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip">
+        <TextView
+            android:textSize="13.0sp"
+            android:id="@+id/comment_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="林武兵" />
+        <TextView
+            android:textSize="17.0sp"
+            android:id="@+id/comment_item_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="这是我学校啊！"
+            android:layout_below="@+id/comment_item_name" />
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/comment_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="第一楼"
+            android:layout_below="@+id/comment_item_context" />
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/comment_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="9分钟前"
+            android:layout_below="@+id/comment_item_context"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/commet_control"
+            android:layout_width="20.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:src="@drawable/more"
+            android:layout_below="@+id/comment_item_context"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:id="@+id/sjx"
+            android:background="#fff5f5f5"
+            android:visibility="invisible"
+            android:layout_width="20.0dip"
+            android:layout_height="10.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="3.0dip"
+            android:src="@mipmap/triangle1"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/comment_item_num" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/comment"
+            android:background="#fff5f5f5"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingBottom="5.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="0.0dip"
+            android:layout_below="@+id/sjx">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/comment1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_num">
+                <TextView android:textColor="@color/colorPrimary" android:id="@+id/comment1_username" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="林武兵：" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@+id/flag1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="：" />
+                <TextView android:id="@+id/comment1_context" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你学校这么漂亮啊" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/comment2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@+id/comment1">
+                <TextView android:textColor="@color/colorPrimary" android:id="@+id/comment2_username" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="林武兵：" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@+id/flag2"  android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="：" />
+                <TextView android:id="@+id/comment2_context" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你学校这么漂亮啊" />
+            </LinearLayout>
+            <TextView android:layout_gravity="center" android:id="@+id/more_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="更多5条评论" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

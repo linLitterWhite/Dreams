@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/side_image"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/ggg"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userphone"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:text=""
+
+        />
+
+    <TextView
+        android:id="@+id/userphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:text=""
+
+        />
+
+    <com.looklook.xinghongfei.looklook.widget.XCRoundImageView
+        android:id="@+id/nave_userimage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/userimage"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/username" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android.support.design="http://schemas.android.com/tools">
+    <group android:id="@+id/g1">
+        <item
+            android:id="@+id/likeschool"
+            android:checkable="true"
+            android:icon="@drawable/zhihu"
+            android:title="感兴趣的学校"
+            android.support.design:itemTextColor="@color/nev_item"
+            app:itemIconTint="@color/nev_item"
+           />
+        <item
+            android:id="@+id/likefroum"
+            android:checkable="true"
+            android:icon="@drawable/wangyi"
+            android:title="感兴趣的帖子"
+            android.support.design:itemTextColor="@color/nev_item"
+            app:itemIconTint="@color/nev_item"/>
+        <item
+            android:id="@+id/myforum"
+            android:checkable="true"
+            android:icon="@drawable/look2"
+            android:title="我发的帖子"
+            android.support.design:itemTextColor="@color/nev_item"
+            app:itemIconTint="@color/nev_item"/>
+    </group>
+
+    <item  android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@drawable/ic_menu_theme"
+                android:title="Theme"
+                app:actionLayout="@layout/action_view_switch" />
+            <item
+                android:id="@+id/loginout"
+                android:icon="@mipmap/userimage"
+                android:title="退出登陆" />
+        </menu>
+    </item>
+</menu>

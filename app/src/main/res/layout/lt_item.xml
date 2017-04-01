@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/lt_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="10.0dip"
+    android:background="@drawable/image_back"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <LinearLayout
+        android:layout_width="40.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5.0dip">
+
+        <com.looklook.xinghongfei.looklook.widget.XCRoundImageView
+            android:id="@+id/lt_item_userimage"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/huaruan" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginLeft="0dp"
+        >
+
+        <TextView
+            android:textSize="20.0sp"
+            android:id="@+id/lt_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:text="华软是“AAAAA”级景区"
+            android:maxLines="1"
+            android:enabled="true"
+            android:layout_below="@+id/lt_item_username" />
+        <TextView
+            android:textSize="17.0sp"
+            android:id="@+id/lt_item_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:maxLines="2"
+            android:enabled="true"
+            android:text="华软是“AAAAA”级景区，欢迎各位前来参观！"
+            android:layout_below="@+id/lt_item_title" />
+        <ImageView
+            android:id="@+id/lt_item_Image"
+            android:layout_width="320.0dip"
+            android:layout_height="160.0dip"
+            android:layout_marginTop="5.0dip"
+            android:src="@mipmap/first"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/lt_item_context" />
+        <TextView
+            android:id="@+id/lt_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="9分钟前"
+            android:layout_below="@+id/lt_item_Image" />
+        <TextView
+            android:id="@+id/lt_item_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="10dp"
+            android:text="1080"
+            android:layout_below="@+id/lt_item_Image"
+            android:layout_alignEnd="@+id/lt_item_Image" />
+        <TextView
+            android:id="@+id/lt_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="10dp"
+            android:text="评论"
+            android:layout_toLeftOf="@+id/lt_item_comment_num"
+            android:layout_below="@+id/lt_item_Image" />
+
+        <TextView
+            android:textSize="13.0sp"
+            android:id="@+id/lt_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="林武兵"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    </LinearLayout>
+
+
